@@ -1,0 +1,13 @@
+name: grapheme
+version: 0.1.0
+
+authors:
+  - farrspace <brian.farr@coupa.com>
+
+targets:
+  grapheme:
+    main: src/grapheme.cr
+
+crystal: 0.24.1
+
+license: MIT
