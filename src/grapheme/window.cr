@@ -11,7 +11,7 @@ class Window
     print "\e[H\e[2J"
   end
 
-  def draw(buffer, y, x, lastkey)
+  def draw(buffer, y, x, lastkey, message)
     print "\e[H\e[2J"
     print "\e[0;0H"
 
@@ -28,6 +28,10 @@ class Window
     print y
     print " "
     print x
+    print " "
+    print "<"
+    print message
+    print ">"
     print " "
     print "["
     print lastkey.inspect
