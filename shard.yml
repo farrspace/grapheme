@@ -11,7 +11,3 @@ targets:
 crystal: 0.24.1
 
 license: MIT
-
-dependencies:
-  termbox:
-    github: andrewsuzuki/termbox-crystal
