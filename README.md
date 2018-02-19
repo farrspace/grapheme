@@ -4,7 +4,11 @@
 
 Or in this case, a minimal implementation of a text editing system.
 
-# Building
+## Demo
+
+![Gif Demo](https://i.imgur.com/eIhO3Ku.gif)
+
+## Building
 Use a C compiler to compile `hack/winsize.c`, until I can find a better way to integrate it, or a better Crystal library to get the window size. Adjust the winsize path in `src/grapheme/window.cr` based on where you saved the source code.
 
 ```
