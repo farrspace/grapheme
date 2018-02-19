@@ -85,10 +85,16 @@ class Editor
       else
         # other key, so handle it as entered text
         @lastkey = b && b.ord
-        @buffer[@y] += b if b
+        insert_character(b) if b
         @x += 1
       end
     end
+  end
+
+  def insert_character(new_character : Char)
+    chars = @buffer[@y].each_char.to_a
+    chars.insert(@x, new_character)
+    @buffer[@y] = chars.join
   end
 
   # Subtract, with a lower limit for the result of 0
